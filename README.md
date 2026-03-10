@@ -68,5 +68,6 @@ Clone the repository:
 
 ```bash
 https://github.com/themdshakibul/Boimela-React-.git
+```
 The project follows a component-based structure.
 
