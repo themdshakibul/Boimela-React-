@@ -1,54 +1,25 @@
+import PropTypes from "prop-types";
 import BookRow from "./BookRow";
 
-const BOOKS = [
-  {
-    id: 1,
-    title: "The Alchemist",
-    author: "Md Shakibul Islma",
-    featured: true,
-  },
-  {
-    id: 2,
-    title: "Atomic Habits",
-    author: "James Clear",
-    featured: true,
-  },
-  {
-    id: 3,
-    title: "Rich Dad Poor Dad",
-    author: "Robert T. Kiyosaki",
-    featured: false,
-  },
-  {
-    id: 4,
-    title: "Think and Grow Rich",
-    author: "Napoleon Hill",
-    featured: false,
-  },
-  {
-    id: 5,
-    title: "Deep Work",
-    author: "Cal Newport",
-    featured: true,
-  },
-];
+function BookList({ searchTerm, books }) {
+  const rews = [];
+  books.forEach((book) => {
+    if (book.title.toLowerCase().indexOf(searchTerm.toLowerCase()) === -1) {
+      return;
+    }
+    rews.push(<BookRow key={book.id} book={book} />);
+  });
 
-const BookList = () => {
   return (
     <>
-      <ul className="space-y-4">
-        {BOOKS.map((book) => (
-          <>
-            <div className="flex flex-col">
-              <li key={book.id}>
-                <BookRow book={book} />
-              </li>
-            </div>
-          </>
-        ))}
-      </ul>
+      <div className="space-y-5">{rews}</div>
     </>
   );
+}
+
+BookList.PropTypes = {
+  searchTerm: PropTypes.string.isRequired,
+  books: PropTypes.array.isRequired,
 };
 
 export default BookList;
