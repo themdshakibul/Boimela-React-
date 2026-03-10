@@ -1,16 +1,72 @@
-# React + Vite
+# 📚 Boimela
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Boimela is a simple React application that displays a list of popular books.  
+Users can search books and view them in a clean list interface.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## React Compiler
+- 🔎 Search books by name
+- ⭐ Mark books as favorite
+- 📖 Clean book list UI
+- ⚡ Built with React components
+- 🧩 Component based architecture
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- JavaScript (ES6)
+- CSS / Tailwind (if used)
+- Vite / Create React App
+
+---
+
+## 📂 Project Structure
+
+```text
+Boimela
+│
+├── Header
+├── Search
+└── BookList
+    │
+    └── BookRow
+        │
+        ├── BookDetails
+        └── FeatureBooks
+```
+
+
+### Component Description
+
+**Header**
+- Displays the application title.
+
+**Search**
+- Allows users to search books by name.
+
+**BookList**
+- Contains all book items.
+
+**BookRow**
+- Represents a single book row.
+
+**BookDetails**
+- Displays book title and author.
+
+**FeatureBooks**
+- Handles favorite/star feature.
+
+---
+
+## 📦 Installation
+
+Clone the repository:
+
+```bash
+https://github.com/themdshakibul/Boimela-React-.git
+The project follows a component-based structure.
+
